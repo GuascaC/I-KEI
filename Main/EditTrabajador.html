@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabajador</title>
+  <link rel="stylesheet" href="../syles/styles.css">
+  <link rel="stylesheet" href="../syles/syles.css">
+  <link rel="icon" href="../img/logo.jpeg">
+</head>
+
+<body>
+  <header>
+    <div class="header1">
+      <div class="divHeader">
+      </div>
+    </div>
+    <div class="header2">
+      <div class="imagenesHeader">
+        <img src="../img/Logo.jpeg" alt="logo">
+      </div>
+      <a onclick="redirigir06()"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
+    </div>
+  </header>
+  <main>
+    <section id="form">
+      <section class="parte1">
+        <div class="cog">
+          <div>
+          </div>
+          <button class="bHistorial"><a href="./historial.html">Historial</a></button>
+          <button class="volver"><a href="./Trabajadores.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+        </div>
+      </section>
+      <form id="form" action="php/based.php" method="post">
+        <h2>Información Personal</h2>
+        <section class="infEmpEdit">
+          <section>
+            <img src="../img/placeh.png" class="img" alt="foto"><br>
+            <input type="file" accept="image/png, image/jpeg">
+          </section>
+          <div>
+            <label for="fn">Nombre y Apellidos</label>
+            <input id="fn" type="text" placeholder="Nombre y Apellidos" autofocus autocomplete="on" required
+              name="nombre"><br>
+            <label for="fn">Fecha de Nacimiento: </label>
+            <input id="fn" type="date" required><br><br>
+            <label for="age">Edad:</label>
+            <input id="age" type="number" required><br><br>
+            <label for="sex">Sexo: </label>
+            <select id="sex" required>
+              <option value="" selected>Sexo</option>
+              <option>Femenino</option>
+              <option>Masculino</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div>
+            <label for="id">Tipo de Documento : </label>
+            <select id="td" required>
+              <option value="" selected>Seleccione</option>
+              <option>C.C</option>
+              <option>T.I</option>
+            </select><br><br>
+            <label for="ni">Número de Identidad: </label>
+            <input id="ni" type="number" required name="doc">
+            <div class="divInp">
+            <label for="prog">Estado: </label>
+            <select id="prog" name="fase">
+              <option value="" selected>Seleccione</option>
+              <option>Esperando Respuesta</option>
+              <option>Asociado</option>
+              <option>Pendiente</option>
+              <option>Buscando</option>
+              <option>Abandono</option>
+            </select>
+          </div>
+          </div>
+        </section>
+        <h2>Información Académica</h2>
+        <section class="infContactoEdit">
+          <div class="divInp">
+            <label for="prog">Profesión: </label>
+            <select id="prog" required name="prof">
+              <option value="" selected>Profesión</option>
+              <option>ADMINISTRACIÓN DE EMPRESAS</option>
+              <option>CONTADURÍA PÚBLICA Y FINANZAS INTERNACIONALES</option>
+              <option>DISEÑO DE PRODUCTO</option>
+              <option>FINANZAS Y COMERCIO EXTERIOR</option>
+              <option>INGENIERÍA DE SOFTWARE</option>
+              <option>INGENIERÍA INDUSTRIAL</option>
+              <option>MARKETING Y LOGÍSTICA</option>
+              <option>NEGOCIOS INTERNACIONALES</option>
+            </select><br><br>
+          </div>
+        </section>
+        <h2>Información de Contacto</h2>
+        <section class="infContactoEdit">
+          <div>
+            <label for="emailp">Correo electrónico Personal: </label>
+            <input id="emailp" type="email" required name="mail"><br><br>
+            <label for="dirrecionr">Dirección Residencia: </label>
+            <input id="dirrecionr" type="text" required>
+          </div>
+          <div>
+            <label for="telefc">Teléfono Celular: </label>
+            <input id="telefc" type="tel" required><br><br>
+            <label for="teleff">Teléfono Fijo:</label>
+            <input id="teleff" type="tel" placeholder="(601)" required><br>
+            <button>Documentos</button>
+          </div>
+        </section>
+        <h2>Información Opcional</h2>
+        <section class="infContactoEdit">
+          <div class="divInp">
+            <label for="estrato">Estrato</label>
+            <select id="estrato">
+              <option selected>Seleccione</option>
+              <option>Uno</option>
+              <option>Dos</option>
+              <option>Tres</option>
+              <option>Cuatro</option>
+              <option>Cinco</option>
+              <option>Seis</option>
+            </select><br><br>
+            <label for="estadoc">Estado Civil</label>
+            <select id="estadoc">
+              <option selected>Seleccione</option>
+              <option>Solter@</option>
+              <option>Casad@</option>
+              <option>Divorciad@</option>
+              <option>viud@</option>
+              <option>Unión Libre</option>
+            </select><br><br>
+            <label for="ts">Tipo de Sangre</label>
+            <select id="ts">
+              <option selected>Seleccione</option>
+              <option>A+</option>
+              <option>A-</option>
+              <option>B+</option>
+              <option>B-</option>
+              <option>C+</option>
+              <option>C-</option>
+              <option>AB+</option>
+              <option>AB-</option>
+            </select><br><br>
+            <label for="eps">EPS</label>
+            <input id="eps" type="text"><br><br>
+            <label for="discapacidad">Discapacidad:</label>
+            <input id="discapacidad" type="text"><br><br>
+          </div>
+          <div class="divInp">
+            <label for="nlm">Numero Libreta Militar</label>
+            <input id="nlm" type="number"><br><br>
+            <label for="multc">Multiculturalidad</label>
+            <select id="multc">
+              <option>Indígena</option>
+              <option>Afrocolombiano</option>
+              <option>Romaníes</option>
+            </select><br><br>
+            <label for="contE">Contacto de Emergencia</label>
+            <input type="text" id="contE"><br><br>
+            <label for="contN">Número Telefónico</label>
+            <input type="number" id="contN">
+        </section>
+        </div>
+    </section>
+    <button type="submit" class="guardarCof">Guardar</button>
+    </form>
+  </main>
+  <footer>
+    <div class="footer1">
+    </div>
+    <div class="footer2">
+      <p>Todos los derechos reservados © 2020 -2023 .</p>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/0bf8ac12b9.js" crossorigin="anonymous"></script>
+  <script src="../Scripts/Redirigir.js"></script>
+</body>
+
+</html>

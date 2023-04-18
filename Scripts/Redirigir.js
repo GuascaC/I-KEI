@@ -15,26 +15,26 @@ function redirigir06() {
   window.location.href = "../index.html";
 }
 function redirigir07() {
-  window.location.href = "../CMain/trabajador.html";
+  window.location.href = "../main/trabajador.html";
 }
 function redirigir08() {
-  window.location.href = "../CMain/Empresas.html";
+  window.location.href = "../main/Empresas.html";
 }
 function redirigir09() {
-  window.location.href = "../CMain/EmpresasDR.html";
+  window.location.href = "../main/EmpresasDR.html";
 }
 function redirigir10() {
-  window.location.href = "../CMain/editTrabajador.html";
+  window.location.href = "../main/editTrabajador.html";
 }
 function redirigir11() {
-  window.location.href = "../CMain/edittrabajador.html";
+  window.location.href = "../main/edittrabajador.html";
 }
 function redirigir12() {
-  window.location.href = "../CMain/ListaEmpresas";
+  window.location.href = "../main/ListaEmpresas";
 }
 function redirigir13() {
-  window.location.href = "../CMain/AnadirEmpresa.html";
+  window.location.href = "../main/AnadirEmpresa.html";
 }
 function redirigir14() {
-  window.location.href = "../CMain/trabajador.html";
+  window.location.href = "../main/trabajador.html";
 }

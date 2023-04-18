@@ -67,7 +67,7 @@ function PassV() {
 function Redir() {
   if ((email === "true")) {
     console.log("1");
-    window.location.href = "../CMain/gestion.html";
+    window.location.href = "../main/gestion.html";
   } else {
 
   }
