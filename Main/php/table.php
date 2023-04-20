@@ -26,6 +26,7 @@
                 <img src="../../img/Logo.jpeg" alt="logo">
             </div> 
             <a href="../../index.html"><i class="fa-solid fa-user" ></i> Cerrar Sesión</a>
+            
         </div>
     </header>
   <main>
