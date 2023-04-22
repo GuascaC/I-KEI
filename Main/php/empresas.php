@@ -35,7 +35,7 @@
 </section>
 
     <section class="vLista">
-     <button class="volv"><a href="./gestion.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+     <button class="volv"><a href="../Gestion.html"><i class="fa-solid fa-arrow-left"></i></a></button>
     </section>
     
         <div id="search" class="buscar">
@@ -84,15 +84,15 @@ $sql2 = "SELECT * FROM empresas";
 $consulta2 = mysqli_query($cone ,$sql2 );
 
 if (mysqli_num_rows ($consulta2) > 0)  {
-while ($resultado2 = mysqli_fetch_assoc($consulta2)){
+while ($resultado = mysqli_fetch_assoc($consulta2)){
 
 ?>
 <tr class="name">
-<td class="tdNombre"><?php echo $resultado2["nit"] ?></td>
-<td class="tdRol"><?php echo $resultado2["nomE"] ?></td>
-<td class="tdEstado"><?php echo $resultado2["prof2"] ?></td>
-<td class="tdEstado"><?php echo $resultado2["cup"] ?></td>
-<td class="tdFecha2"><?php echo $resultado2["date"] ?></td>
+<td class="tdNombre"><?php echo $resultado["nit"] ?></td>
+<td class="tdRol"><?php echo $resultado["nomE"] ?></td>
+<td class="tdEstado"><?php echo $resultado["cup"] ?></td>
+<td class="tdEstado"><?php echo $resultado["prof2"] ?></td>
+<td class="tdFecha2"><?php echo $resultado["date"] ?></td>
 </tr>
 </tbody>
 <?php

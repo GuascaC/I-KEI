@@ -37,7 +37,7 @@
 </section>
 
     <section class="vLista">
-     <button class="volv" onclick="redirigir06()"><a href="./gestion.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+     <button class="volv" onclick="redirigir06()"><a href="../gestion.html"><i class="fa-solid fa-arrow-left"></i></a></button>
     </section>
     
         <div id="search" class="buscar">
